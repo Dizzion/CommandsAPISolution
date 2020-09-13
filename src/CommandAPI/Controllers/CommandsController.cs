@@ -17,6 +17,7 @@ namespace CommandAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Command>> GetCommandItems()
         {
+            //Get All Commands
             return _context.CommandItems;
         }
 
