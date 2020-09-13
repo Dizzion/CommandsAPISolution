@@ -1,4 +1,4 @@
-namespace CommandAPI.Model
+namespace CommandAPI.Models
 {
     public class Command
     {

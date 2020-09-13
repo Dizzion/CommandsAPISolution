@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using CommandAPI.Model;
+using CommandAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommandAPI.Controllers
