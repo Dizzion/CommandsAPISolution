@@ -63,5 +63,17 @@ namespace CommandAPI.Controllers
             return NoContent();
         }
 
+        //DELETE: api/commands/{Id}
+        [HttpDelete("{id}")]
+        public ActionResult<Command> DeleteCommandItem(int id)
+        {
+            var commandItem = _context.CommandItems.Find(id);
+            if (commandItem == null)
+                return NotFound();
+            _context.CommandItems.Remove(commandItem);
+            _context.SaveChanges();
+            return commandItem;
+        }
+
     }
 }
