@@ -1,6 +1,6 @@
 namespace CommandAPI.Model
 {
-    public class Commands
+    public class Command
     {
         public int Id { get; set; }
         public string HowTo { get; set; }
