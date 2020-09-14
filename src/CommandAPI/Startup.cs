@@ -47,6 +47,8 @@ namespace CommandAPI
 
             app.UseRouting();
 
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 //SECTION 2
